@@ -26,12 +26,12 @@ class App extends Component {
     }
     else {
       this.setState({ isRecording: true })
+      this.props.audioContext.init();
       this.props.audioContext.start();
     }
   }
 
   componentDidMount() {
-    this.props.audioContext.init();
     this.props.audioContext.onFrequencyFound = this.onFrequencyFound.bind(this);
   }
 
