@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'Components/App';
-import DataFeed from 'libs/data_feed';
+import AudioContextHandler from './service/audioApi';
 import './styles.scss';
 
-ReactDOM.render(<App dataFeed={new DataFeed()}/>, document.getElementById('root'));
+ReactDOM.render(<App audioContext = { new AudioContextHandler()}/>, document.getElementById('root'));

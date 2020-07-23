@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 9,
     sourceType: 'module'
   },
   plugins: [
@@ -14,7 +14,8 @@ module.exports = {
     "plugin:jest/recommended"
   ],
   env: {
-    browser: true
+    browser: true,
+    es6:true, 
   },
   settings: {
     react: {
